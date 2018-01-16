@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
-import com.thoughtworks.selenium.webdriven.commands.Click;
+//import com.thoughtworks.selenium.webdriven.commands.Click;
 
 import Library.OR.pg_EmergencyContacts;
 import Library.OR.pg_HomePage;
@@ -25,7 +25,7 @@ public class TestScriptsDefinition extends WebGeneralLibrary
 	   
 	  	WebDriver driver= launchBrowser("chrome");
 	  	OpenUrl(driver, getData("URL"));
-	  	
+	  	System.out.println("Hi Amar");
 	  	plog = "Able to Enter UserName";
 	  	flog = "Unable to enter UserName";
 	  	SetText(driver, pg_Login.Edt_UserName, getData("UserName"),plog,flog);
