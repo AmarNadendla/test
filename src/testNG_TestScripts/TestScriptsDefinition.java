@@ -17,11 +17,12 @@ import Library.WebGeneralLibrary;
 
 public class TestScriptsDefinition extends WebGeneralLibrary
 {
+	   public  String plog;
+	    public String flog;
   @Test
   public void TC01_AddEmergencyContactsAndVerify() 
   {
-	    String plog;
-	    String flog;
+	   
 	  	WebDriver driver= launchBrowser("chrome");
 	  	OpenUrl(driver, getData("URL"));
 	  	
@@ -86,9 +87,12 @@ public class TestScriptsDefinition extends WebGeneralLibrary
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("http://testingmasters.com/hrm/symfony/web/index.php/dashboard/");
-		driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys("ankit3");
-		driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys("abcd1234");
-		driver.findElement(By.xpath("//input[@id='btnLogin']")).click();
+		SetText(driver, pg_Login.Edt_UserName, "ankit3", plog, flog);
+		//driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys("ankit3");
+		SetText(driver, pg_Login.Edt_Password, "abcd1234", plog, flog);
+		//driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys("abcd1234");
+		ClickElement(driver, pg_Login.Btn_Login, plog, flog);
+		//driver.findElement(By.xpath("//input[@id='btnLogin']")).click();
 		
 		driver.findElement(By.xpath("//b[text()='My Info']")).click();
 		driver.findElement(By.xpath("//a[text()='Dependents']")).click();
