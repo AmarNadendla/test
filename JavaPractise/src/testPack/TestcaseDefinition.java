@@ -2,12 +2,15 @@ package testPack;
 
 import java.util.concurrent.TimeUnit;
 
+import libraries.CommonMethods;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 
-public class TestcaseDefinition {
+public class TestcaseDefinition extends CommonMethods
+{
 
 	public WebDriver driver;
 	
@@ -33,7 +36,9 @@ public class TestcaseDefinition {
 	{
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get("https://www.seleniumeasy.com/test/");
+        ClickElement(driver, xpath);
 	}
+	
 	
 	
 	
