@@ -899,3 +899,7 @@ java.lang.NullPointerException: null
 2019-10-10 23:59:36,130 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Cucumber\cucumber-java-skeleton-master\src\main\resources
 2019-10-10 23:59:36,133 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2019-10-10 23:59:36,203 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-10-12 14:49:30,015 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-12 14:49:30,043 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\git\testprjct\API\src\main\resources
+2019-10-12 14:49:30,053 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-12 14:49:30,053 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\git\testprjct\API\src\test\resources
