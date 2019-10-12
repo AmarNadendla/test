@@ -1,23 +1,25 @@
 package restAssured;
 
 import org.testng.annotations.Test;
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
 
 public class FirstClass{
 
-	/**
-	 * @deprecated Use {@link #test(Object)} instead
-	 */
+	
 	@Test
 	public void test23()
 	{
-		test("this is main test");
+		given()
+		  .when()
+     	     .get("https://jsonplaceholder.typicode.com/todos/1")
+		.then()
+		.assertThat().statusCode(200);
+		
+		
+		
 	}
 
-	public String test(String newParam) {
-	// TODO Auto-generated method stub
-	System.out.println("AMAR");
-	return newParam;
-}
 
 }
 

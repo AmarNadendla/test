@@ -60,6 +60,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="E:\Quality thought Referances\SampleProject\SampleProject"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -71,12 +72,15 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="SeleniumFW.Amar"/>
 			<item value="RESTAssured.API"/>
 		</list>
 		<list key="groupId">
+			<item value="SeleniumFW"/>
 			<item value="RESTAssured"/>
 		</list>
 		<list key="artifactId">
+			<item value="Amar"/>
 			<item value="API"/>
 		</list>
 		<list key="projectNameTemplate">

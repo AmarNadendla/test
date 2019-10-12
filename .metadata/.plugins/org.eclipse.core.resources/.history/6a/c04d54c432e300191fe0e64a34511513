@@ -1,0 +1,36 @@
+package SeleniumFW.Amar;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.*;
+
+  
+
+public class testScripts extends CommonMethods
+
+{
+	CommonMethods cm = new CommonMethods();
+	
+	public WebDriver driver = null;
+	@BeforeMethod
+	public void launchBrowser()
+	{
+		Browser("Chrome");
+		//driver.get("https://www.amazon.in/");
+		cm.getUrl("https://www.makemytrip.com/");
+		
+	}
+	
+	
+	@Test
+	private void method1() {
+		
+         driver.findElement(By.xpath("//*[@id='SW']/div[2]/div[1]/ul/li[6]/div/p")).click();
+         
+         
+         
+	}
+	
+}
